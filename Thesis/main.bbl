@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+
+\bibitem{bishop2006pattern}
+{\sc C.~M. Bishop}, {\em Pattern Recognition and Machine Learning}, Springer,
+  2006.
+
+\bibitem{cristianini2004introduction}
+{\sc N.~Cristianini and J.~Shawe-Taylor}, {\em An Introduction to Support
+  Vector Machines and Other Kernel-based Learning Methods}, Cambridge
+  University Press, 2004.
+
+\bibitem{cristianini2004kernels}
+{\sc N.~Cristianini and J.~Shawe-Taylor}, {\em Kernel Methods for Pattern
+  Analysis}, Cambridge University Press, 2004.
+
+\bibitem{gretton2015rkhs}
+{\sc A.~Gretton}, {\em Introduction to {RKHS}, and {S}ome {S}imple {K}ernel
+  {A}lgorithms}.
+\newblock 2015.
+
+\bibitem{hastie2008elements}
+{\sc T.~Hastie, R.~Tibshirani, and J.~Friedman}, {\em The Elements of
+  Statistical Learning}, Springer, 2008.
+
+\bibitem{jollife2002principal}
+{\sc I.~T. Jollife}, {\em Principal Component Analysis}, Springer, 2002.
+
+\bibitem{Lichman:2013}
+{\sc M.~Lichman}, {\em {UCI} {M}achine {L}earning {R}epository}.
+\newblock \url{http://archive.ics.uci.edu/ml} , University of California,
+  Irvine, School of Information and Computer Sciences, 2013.
+
+\bibitem{merry2005wavelet}
+{\sc R.~J.~E. Merry}, {\em Wavelet {T}heory and {A}pplications}.
+\newblock Eindhoven University of Technology, 2005.
+
+\bibitem{nocedal2006numerical}
+{\sc J.~Nocedal and S.~J. Wright}, {\em Numerical Optimization}, Springer,
+  2006.
+
+\bibitem{rudin1991functional}
+{\sc W.~Rudin}, {\em Fuctional Analysis}, McGraw-Hill, 1991.
+
+\bibitem{scholkopf1999kernel}
+{\sc B.~Schölkopf, A.~Smola, and K.-R. Müller}, {\em Kernel {P}rincipal
+  {C}omponent {A}nalysis}, in Advances in Kernel Methods: Support Vector
+  Learning, MIT Press, 1999, pp.~327--352.
+
+\bibitem{Sejdinvic2012rkhs}
+{\sc D.~Sejdinovic and A.~Gretton}, {\em Foundations of {R}eproducing {K}ernel
+  {H}ilberts {S}paces {I}{I}. {A}dvanced {T}opics in {M}achine {L}earning}.
+\newblock Gatsby Unit, 2012.
+
+\bibitem{shah2007support}
+{\sc R.~S. Shah}, {\em Support {V}ector {M}achines for {C}lassification and
+  {R}egression}, Master's thesis, McGill University, 2007.
+
+\bibitem{timm2002applied}
+{\sc N.~H. Timm}, {\em Applied Multivariate Analysis}, Springer, 2002.
+
+\end{thebibliography}

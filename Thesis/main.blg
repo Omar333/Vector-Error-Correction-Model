@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: siam.bst
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: statement.aux
+A level-1 auxiliary file: ack.aux
+Database file #1: ref.bib
+Warning--empty note in gretton2015rkhs
+You've used 14 entries,
+            2030 wiz_defined-function locations,
+            565 strings with 5396 characters,
+and the built_in function-call counts, 3268 in all, are:
+= -- 260
+> -- 144
+< -- 0
++ -- 60
+- -- 44
+* -- 215
+:= -- 571
+add.period$ -- 18
+call.type$ -- 14
+change.case$ -- 56
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 171
+empty$ -- 304
+format.name$ -- 44
+if$ -- 663
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 17
+newline$ -- 49
+num.names$ -- 28
+pop$ -- 93
+preamble$ -- 1
+purify$ -- 50
+quote$ -- 0
+skip$ -- 89
+stack$ -- 0
+substring$ -- 104
+swap$ -- 36
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 40
+warning$ -- 1
+while$ -- 31
+width$ -- 16
+write$ -- 120
+(There was 1 warning)

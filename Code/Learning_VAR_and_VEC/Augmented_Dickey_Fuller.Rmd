@@ -1,0 +1,23 @@
+---
+title: "Augmented Dickey Fuller Test"
+output: html_notebook
+---
+
+Dickey y Fuller consideran tres tipos de ecuaciones de regresión que pueden ser utilizadas para probar la presencia de raíces unitarias:
+
+* $\nabla y_t = \gamma y_{t-1} + \epsilon_t$
+* $\nabla y_t = a_0 +  \gamma y_{t-1} + \epsilon_t$
+* $\nabla y_t = a_0 +  \gamma y_{t-1} + a_2t + \epsilon_t$
+
+El primero de ellos es un modelo puro de caminata aleatoria, el segudno agrega un intercepto o drift y el tercero incluye teanto un drift como una tendencia lineal temporal.
+
+El parámetro de interés en todas estas ecuaciones es $\gamma$; Si $\gamma=0$ entonces la serie $y_t$ contiene una raíz unitaria. 
+
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
