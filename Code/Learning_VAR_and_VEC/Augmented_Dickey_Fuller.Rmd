@@ -13,6 +13,8 @@ El primero de ellos es un modelo puro de caminata aleatoria, el segudno agrega u
 
 El parámetro de interés en todas estas ecuaciones es $\gamma$; Si $\gamma=0$ entonces la serie $y_t$ contiene una raíz unitaria. 
 
+http://stats.stackexchange.com/questions/24072/interpreting-rs-ur-df-dickey-fuller-unit-root-test-results
+
 
 ```{r}
 plot(cars)
