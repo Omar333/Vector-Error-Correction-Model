@@ -5,19 +5,35 @@ output: html_notebook
 
 Dickey y Fuller consideran tres tipos de ecuaciones de regresión que pueden ser utilizadas para probar la presencia de raíces unitarias:
 
-* $\nabla y_t = \gamma y_{t-1} + \epsilon_t$
-* $\nabla y_t = a_0 +  \gamma y_{t-1} + \epsilon_t$
-* $\nabla y_t = a_0 +  \gamma y_{t-1} + a_2t + \epsilon_t$
+  1) $\nabla y_t = \gamma y_{t-1} + \epsilon_t$
+  2) $\nabla y_t = a_0 +  \gamma y_{t-1} + \epsilon_t$
+  3) $\nabla y_t = a_0 +  \gamma y_{t-1} + a_2t + \epsilon_t$
 
 El primero de ellos es un modelo puro de caminata aleatoria, el segudno agrega un intercepto o drift y el tercero incluye teanto un drift como una tendencia lineal temporal.
 
-El parámetro de interés en todas estas ecuaciones es $\gamma$; Si $\gamma=0$ entonces la serie $y_t$ contiene una raíz unitaria. 
+El parámetro de interés en todas estas ecuaciones es $\gamma$; Si $\gamma=0$ entonces la serie $y_t$ contiene una raíz unitaria. La prueba se reduce en estimar las ecuaciones anteriormente mencionadas via OLS, de tal manera que se obtenga el valor estimado del parametro $\gamma$ y su error estandar asociado. Dicho estadistico $t$ se debe comparar con sus correspondientes valores dea cuerdo con las tablas creadoas por Dicckey-Fuller.
+
+Esta metodologia se sigue para cualquiera de las tres ecuaciones enunciadas anteriormente, sin embargo, el detalle es que cambian los valores criticos de Dickey-Fuller dependiendo la ecuacion utilizada para estimar el valor del parametro $\gamma$. Dickey-Fuller concluyeron que los valores criticos para $\gamma=0$ dependen deltipo de regresion y el tama�o de la muestra.
+
+Adicionalmente Dickey and Fuller crearon tres estadisticos adicionales llamados $\phi_1,\phi_2,\phi_3$ para probar pruebas de hipotesis conjuntas:
+
+* El estadistico $\phi_1$ .- Emplea la ecuacion numero 2 para probar la hipotesis nula conjunta $\gamma=a_0=0$
+* El estadistico $\phi_2$ .- Emplea la ecuacion numero 3 para probar la hipotesis nula conjunta $\gamma=a_0=a_2=0$
+* El estadistico $\phi_3$ .- Emplea la ecuacion numero 3 para probar la hipotesis nula conjunta $\gamma=a_2=0$
+
+En donde los tres estadisticos se construyen igual que cualquier prueba $F$:
+
+$$ \phi_i = \frac{[RSS_{restricted}-RSS_{unrestricted}]r}{RSS_{unrestricted}(T-k)}$$
+donde $RSS$ son las sumas al cuadrado de los residuales del modelo restringido vs el no restringido, $r$ es el numero de restricciones, $T$ el numero de observaciones usbales y $k$ el numero de parametros estimados en el modelo sin restricciones.
+
+Por lo tanto, la hipotesis nula es que los datos fueron generados por el modelo con restricciones y la alternativa es que los datos fueron generados por el modelo sin restricciones. Si la restriccion no se cumple, la suma de los cuadrados de ambos modelos deberian ser muy similares y por lo tanto $\phi_i$ sera peque�a. Asi pues, si el valor de $ \phi$ es grande quiere decir que se rechaza la hipotesis nula.
 
 http://stats.stackexchange.com/questions/24072/interpreting-rs-ur-df-dickey-fuller-unit-root-test-results
 
 
 ```{r}
 plot(cars)
+summary(cars)
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
